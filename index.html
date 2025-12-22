@@ -3,31 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorokin Academic Portal</title>
+    <title>Sorokin AI | Access Portal</title>
     <style>
-        /* FULL SCREEN SETUP */
-        body, html { 
-            margin: 0; 
-            padding: 0; 
-            height: 100%; 
-            width: 100%;
-            overflow: hidden; 
-            background-color: #1a2a3a; /* Deep Navy to match your theme */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #0d1b2a; /* Deep Navy */
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
-        
-        /* IFRAME WINDOW */
-        iframe { 
-            width: 100%; 
-            height: 100%; 
-            border: none; 
-            display: block; 
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #e0e1dd;
+        }
+
+        p {
+            color: #778da9;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        .launch-btn {
+            background-color: #415a77;
+            color: white;
+            padding: 15px 30px;
+            border: 1px solid #778da9;
+            text-decoration: none;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .launch-btn:hover {
+            background-color: #778da9;
+            color: #0d1b2a;
+            box-shadow: 0 0 15px rgba(119, 141, 169, 0.5);
+        }
+
+        .status {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #00ff00;
         }
     </style>
 </head>
 <body>
-    <iframe 
-        src="https://sorokin-ai-sorokinaifull.hf.space" 
-        allow="camera; microphone; clipboard-read; clipboard-write;"
-    ></iframe>
+
+    <h1>Sorokin AI</h1>
+    <p>SECURE INTELLIGENCE SYSTEM</p>
+
+    <a href="https://sorokin-ai-sorokinaifull.hf.space" class="launch-btn">
+        Initialize System
+    </a>
+
+    <div class="status">
+        ● SERVER ONLINE
+    </div>
+
 </body>
 </html>
