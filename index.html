@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorokin AI | Access Portal</title>
     <style>
@@ -18,21 +21,8 @@
             justify-content: center;
             text-align: center;
         }
-
-        h1 {
-            font-size: 2.5rem;
-            letter-spacing: 4px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            color: #e0e1dd;
-        }
-
-        p {
-            color: #778da9;
-            margin-bottom: 40px;
-            font-size: 1rem;
-        }
-
+        h1 { font-size: 2.5rem; letter-spacing: 4px; margin-bottom: 10px; text-transform: uppercase; color: #e0e1dd; }
+        p { color: #778da9; margin-bottom: 40px; font-size: 1rem; }
         .launch-btn {
             background-color: #415a77;
             color: white;
@@ -46,18 +36,6 @@
             text-transform: uppercase;
             border-radius: 5px;
         }
-
-        .launch-btn:hover {
-            background-color: #778da9;
-            color: #0d1b2a;
-            box-shadow: 0 0 15px rgba(119, 141, 169, 0.5);
-        }
-
-        .status {
-            margin-top: 50px;
-            font-size: 0.8rem;
-            color: #00ff00;
-        }
     </style>
 </head>
 <body>
@@ -65,13 +43,22 @@
     <h1>Sorokin AI</h1>
     <p>SECURE INTELLIGENCE SYSTEM</p>
 
-    <a href="https://sorokin-ai-sorokinaifull.hf.space/?__theme=dark" target="_blank" class="launch-btn">
+    <a href="#" onclick="openSecureLink()" class="launch-btn">
         Initialize System
     </a>
 
-    <div class="status">
-        ● SERVER ONLINE
-    </div>
+    <script>
+        function openSecureLink() {
+            // 1. We use the 'Wrapper' link (huggingface.co) because it is the most stable on iPhone.
+            // 2. We add a 'timestamp' to the end. This guarantees the link is unique every time.
+            //    Example: .../SorokinAiFull?t=1734689234
+            var timestamp = new Date().getTime();
+            var secureUrl = "https://huggingface.co/spaces/Sorokin-ai/SorokinAiFull?t=" + timestamp;
+            
+            // 3. Force it to open in the current window (safest for mobile)
+            window.location.href = secureUrl;
+        }
+    </script>
 
 </body>
 </html>
