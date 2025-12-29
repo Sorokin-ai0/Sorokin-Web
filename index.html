@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorokin AI | Personalized AI Tutor for All Subjects</title>
     <!-- SEO + Sharing -->
-    <meta property="og:title" content="Sorokin AI - Your Gamified Personal AI Tutor">
-    <meta property="og:description" content="Learn any subject with personalized paths, progress tracking, and secure AI chats. Covers Math, Science, History, Languages, CS & more. Free accounts – start today!">
+    <meta property="og:title" content="Sorokin AI - Your Intelligent Personal AI Tutor">
+    <meta property="og:description" content="Adaptive AI assistance across all subjects with Flash (fast responses) and Ultra (deep reasoning) models. Personalized paths, secure chats, and progress tracking. Free accounts – start today!">
     <meta property="og:url" content="https://sorokinai.org">
     <meta name="twitter:card" content="summary_large_image">
     <style>
@@ -17,7 +17,7 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background: linear-gradient(135deg, #0d1b2a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: white;
             font-family: 'Segoe UI', Arial, sans-serif;
             display: flex;
@@ -33,19 +33,19 @@
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: radial-gradient(circle at center, rgba(100, 200, 255, 0.1) 0%, transparent 70%);
-            animation: pulse 8s infinite alternate;
+            background: radial-gradient(circle at center, rgba(100, 150, 255, 0.15) 0%, transparent 70%);
+            animation: pulse 10s infinite alternate;
             pointer-events: none;
         }
         @keyframes pulse {
-            0% { opacity: 0.4; transform: scale(1); }
-            100% { opacity: 0.8; transform: scale(1.2); }
+            0% { opacity: 0.3; transform: scale(1); }
+            100% { opacity: 0.6; transform: scale(1.15); }
         }
         h1 { 
             font-size: 4rem; 
             letter-spacing: 4px; 
             margin-bottom: 10px; 
-            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            background: linear-gradient(to right, #60a5fa, #c4b5fd);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
@@ -53,22 +53,28 @@
         .tagline { 
             font-size: 1.8rem; 
             margin-bottom: 30px; 
-            color: #c4b5fd;
+            color: #e0e1dd;
         }
         .features { 
             max-width: 800px; 
             margin: 40px auto; 
-            font-size: 1.2rem; 
+            font-size: 1.3rem; 
             line-height: 1.8;
-            color: #e0e1dd;
+            color: #cbd5e1;
         }
-        .subjects {
-            margin: 30px 0;
+        .models {
+            margin: 20px 0;
             font-size: 1.1rem;
             color: #94a3b8;
         }
+        .subjects {
+            margin: 30px 0;
+            font-size: 1.2rem;
+            color: #a0d8ff;
+            font-weight: bold;
+        }
         .launch-btn {
-            background: linear-gradient(to right, #ef4444, #f97316);
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
             color: white;
             padding: 20px 50px;
             border: none;
@@ -77,12 +83,12 @@
             letter-spacing: 2px;
             cursor: pointer;
             text-transform: uppercase;
-            box-shadow: 0 8px 30px rgba(239, 68, 68, 0.4);
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
             transition: all 0.4s ease;
         }
         .launch-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(239, 68, 68, 0.6);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.6);
         }
         .note {
             margin-top: 40px;
@@ -93,16 +99,17 @@
 </head>
 <body>
     <h1>Sorokin AI</h1>
-    <p class="tagline">Your Gamified Personal AI Tutor</p>
+    <p class="tagline">Your Intelligent Personal AI Tutor</p>
     <p class="features">
-        Unlock personalized learning paths, track progress with Flash ⚡ & Ultra 🧠 scores,<br>
-        and chat securely with AI across <strong>all subjects</strong>.
+        Get adaptive AI assistance across all subjects with personalized learning paths,<br>
+        secure persistent chats, and progress tracking tailored to your needs.
     </p>
-    <p class="subjects">Math • Science • History • Languages • Computer Science • and more</p>
+    <p class="models">Switch between Flash ⚡ (fast responses) and Ultra 🧠 (deep reasoning) models</p>
+    <p class="subjects">Math • Science • History • Languages • Computer Science • and every subject</p>
     <a href="#" onclick="openSecureLink()" class="launch-btn">
         Start Learning Free Now
     </a>
-    <p class="note">Instant free account • Persistent progress • Built for every student</p>
+    <p class="note">Instant free account • No email required • Secure & personalized</p>
 
     <script>
         function openSecureLink() {
