@@ -6,85 +6,104 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorokin AI | Your Personalized AI Tutor for Math, Science & CS</title>
-    <!-- Better SEO + sharing previews -->
-    <meta property="og:title" content="Sorokin AI - Personalized Gamified AI Tutor">
-    <meta property="og:description" content="Master Math, Science & Computer Science with your secure personal AI tutor. Track progress, unlock achievements, and learn at your pace. Free accounts – start now!">
+    <title>Sorokin AI | Personalized AI Tutor for All Subjects</title>
+    <!-- SEO + Sharing -->
+    <meta property="og:title" content="Sorokin AI - Your Gamified Personal AI Tutor">
+    <meta property="og:description" content="Learn any subject with personalized paths, progress tracking, and secure AI chats. Covers Math, Science, History, Languages, CS & more. Free accounts – start today!">
     <meta property="og:url" content="https://sorokinai.org">
-    <meta property="og:image" content="https://huggingface.co/spaces/Sorokin-ai/SorokinAiFull/resolve/main/preview.png"> <!-- Add a screenshot later -->
     <meta name="twitter:card" content="summary_large_image">
     <style>
         body {
             margin: 0;
             padding: 0;
             height: 100vh;
-            background-color: #0d1b2a;
+            background: linear-gradient(135deg, #0d1b2a 0%, #1e293b 100%);
             color: white;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Segoe UI', Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        /* Subtle animated background glow */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at center, rgba(100, 200, 255, 0.1) 0%, transparent 70%);
+            animation: pulse 8s infinite alternate;
+            pointer-events: none;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.4; transform: scale(1); }
+            100% { opacity: 0.8; transform: scale(1.2); }
         }
         h1 { 
-            font-size: 3rem; 
-            letter-spacing: 6px; 
-            margin-bottom: 20px; 
-            text-transform: uppercase; 
-            color: #ffffff; 
+            font-size: 4rem; 
+            letter-spacing: 4px; 
+            margin-bottom: 10px; 
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: bold;
         }
         .tagline { 
-            color: #a0d8ff; 
-            margin-bottom: 20px; 
-            font-size: 1.4rem; 
-            letter-spacing: 2px;
+            font-size: 1.8rem; 
+            margin-bottom: 30px; 
+            color: #c4b5fd;
         }
         .features { 
-            color: #778da9; 
-            max-width: 600px; 
-            margin: 30px auto; 
-            font-size: 1.1rem; 
-            line-height: 1.6;
+            max-width: 800px; 
+            margin: 40px auto; 
+            font-size: 1.2rem; 
+            line-height: 1.8;
+            color: #e0e1dd;
+        }
+        .subjects {
+            margin: 30px 0;
+            font-size: 1.1rem;
+            color: #94a3b8;
         }
         .launch-btn {
-            background-color: #ff4444; /* Brighter red for urgency */
+            background: linear-gradient(to right, #ef4444, #f97316);
             color: white;
-            padding: 18px 40px;
-            border: 1px solid #ff6666;
-            text-decoration: none;
-            font-size: 1.4rem;
-            letter-spacing: 3px;
-            transition: all 0.3s ease;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.6rem;
+            letter-spacing: 2px;
             cursor: pointer;
             text-transform: uppercase;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(255, 68, 68, 0.3);
+            box-shadow: 0 8px 30px rgba(239, 68, 68, 0.4);
+            transition: all 0.4s ease;
         }
         .launch-btn:hover {
-            background-color: #ff6666;
-            transform: scale(1.05);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(239, 68, 68, 0.6);
         }
         .note {
             margin-top: 40px;
-            font-size: 0.9rem;
-            color: #415a77;
+            font-size: 1rem;
+            color: #64748b;
         }
     </style>
 </head>
 <body>
     <h1>Sorokin AI</h1>
-    <p class="tagline">Your Personal AI Tutor</p>
+    <p class="tagline">Your Gamified Personal AI Tutor</p>
     <p class="features">
-        Master Math (Algebra → Calculus), Science & Computer Science<br>
-        with gamified progress tracking ⚡🧠, personalized learning paths,<br>
-        and secure persistent chats.
+        Unlock personalized learning paths, track progress with Flash ⚡ & Ultra 🧠 scores,<br>
+        and chat securely with AI across <strong>all subjects</strong>.
     </p>
+    <p class="subjects">Math • Science • History • Languages • Computer Science • and more</p>
     <a href="#" onclick="openSecureLink()" class="launch-btn">
         Start Learning Free Now
     </a>
-    <p class="note">Instant account creation • No email required • Built for students</p>
+    <p class="note">Instant free account • Persistent progress • Built for every student</p>
+
     <script>
         function openSecureLink() {
             var timestamp = new Date().getTime();
